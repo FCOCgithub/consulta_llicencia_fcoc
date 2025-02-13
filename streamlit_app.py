@@ -94,7 +94,8 @@ def streamlit_main():
     st.set_page_config(layout="wide", page_title="FCOC - consulta Llicencia", page_icon=":earth:")
 
     row1_1, row1_2 = st.columns((0.5,3))
-    row1_1.image("logo_fcoc_2q.png", caption="", use_column_width=True)
+    # row1_1.image("logo_fcoc_2q.png", caption="", use_column_width=True)
+    row1_1.image("logo_fcoc_2q.png", caption="", use_container_width=True)
     row1_2.title("Consulta llicencia FCOC")
     with row1_2.expander("About"):
         st.write("Permet comprobar si un esportista disposa de llicència federativa tramitada.")
