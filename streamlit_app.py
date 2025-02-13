@@ -121,10 +121,9 @@ def streamlit_main():
                 # anem a mirar quin es l'estat:
                 if llic.is_tramitada():
                     row2_2.write(f"LLicència {nllic} ------")
-                    row2_2.write(f"Codi: {llic.codi}")
+                    row2_2.write(f"Codi: {llic.codi} ({llic.temporada})")
                     row2_2.write(f"Esportista: {llic.esportista}")
                     row2_2.write(f"Club: {llic.club}")
-                    row2_2.write(f"Tipus: {llic.temporada} | {llic.llic_nom}")
                 else:
                     match llic.estat:
                         case "LLIESTPRE":
